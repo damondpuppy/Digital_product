@@ -1,0 +1,258 @@
+/*----------------Import------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+/*-----------------Variables---------------*/
+:root{
+  /* colores */
+  --orange-color:#ff5200;
+  --blue-color:#00263b;
+  --red-color:#6f0000;
+  --light-blue-color:#00a1ab;
+  /*Box Shadow*/
+  --box:0px 0 3px #2d2d2d;/*Sombra: X Y Spreed(Cuanto se distribuye la sombra en el borde) Color*/
+
+}
+
+/*----------------Generales------------*/
+html,body{
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------------Navbar--------------------------*/
+
+nav{
+  display: flex;
+  align-items: center;/*Centrar verticalmente(flex)*/
+  background-color: var(--orange-color);
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.nav_options{
+  display: inherit;
+}
+
+nav ul{
+  display: inherit;
+}
+
+nav li{
+  padding-left: 10px;
+  list-style: none;
+}
+
+nav li a{
+  color: black;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: white;
+}
+.brand_logo{
+  display: flex;
+text-decoration: none;
+align-items: center;
+font-weight: bold;
+color: var(--blue-color);
+font-size: 20px;
+font-family: 'Righteous', cursive;
+}
+/*------------------------Main Section--------------------*/
+
+.main_section{
+  padding: 20% ;/*Centrar con padding*/
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curva.png");
+  background-size: cover;/*que cubra todo el área del div*/
+  height: 100px;
+  background-position: center top;
+  padding: 15%;/*Centrar en 10%*/
+  display: flex;
+
+}
+
+.product{
+  padding: 10px;
+  margin-top: -250px;
+}
+
+.product .content{
+  background-color: white;
+  padding: 15px;
+  box-shadow:var(--box);
+  border-radius: 10px;
+}
+.image_product{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+
+}
+.image_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--blue-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  border: 0;
+  cursor: pointer;/*para que salga la manito al pasar por ahi*/
+  border-radius: 4px;
+}
+.main_button:hover{
+  background-color: #015584;
+}
+
+/*------------------------------Benefits-------------------------------*/
+.benefits{
+  padding: 5%;
+  display: flex;
+}
+.benefit{
+  border:2px solid var(--blue-color);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.benefit_content{
+  text-align: center;
+  padding: 15px;
+}
+hr{
+  margin: 0 1%;
+}
+/*-------------------------------Menciones-----------------------------*/
+
+.mention_title{
+  text-align: center;
+  font-size: 30px;
+}
+.mentions{
+  padding: 3%;
+  display: flex;
+}
+.mention{
+  margin: 10px;
+  box-shadow:var(--box);
+  border-radius: 3px;
+  overflow: hidden;/*Colocar todo debajo del borde*/
+}
+.mention_img_content{
+  text-align: center;
+
+}
+.mention_content h3,
+.mention_content p{
+  margin: 10px;
+}
+.mention_img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;/*Para que la imagen no se aplaste al cambiar tamaño*/
+}
+/*---------------------------------Footer-----------------------------------*/
+footer{
+  background-color: var(--light-blue-color);
+}
+.credits{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  align-items: center;
+  height: 60px;
+}
+
+.social-link{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;/*tamaño de las imagenes svg*/
+    margin: 10px 0px 5px 5px;
+}
+.social-link.facebook{
+    background-image: url('../images/fb.svg');
+}
+.social-link.twitter{
+    background-image: url('../images/tw.svg');
+}
+.social-link.instagram{
+    background-image: url('../images/ig.svg');
+}
+.social-link.email{
+    background-image: url('../images/mail.svg');
+}
+/*-------------------------------Producto.html-----------------------------*/
+/*-------------------------------Productos---------------------------------*/
+.products_2{
+  margin-top: 30px;
+}
+.products_2 h2{
+  font-size: 30px;
+  margin: 15px;
+  text-align: center;
+}
+.products_2 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.products_2_img_cont{
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+.product_2_details{
+  padding: 10px;
+  display: flex;
+  align-items: center
+}
+
+/*----------------------------------Venta.html------------------------------*/
+/*---------------------------------venta------------------------------------*/
+.modulo_pago{
+  box-shadow: var(--box);
+  padding: 10px
+}
+.modulo_pago_images img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+label{
+  font-size: 15px;
+}
+input{
+      margin: 10px 0px;
+      width: 100%;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px solid black;
+      padding: 0 0 0 5px;
+      box-sizing: border-box;/*Ajustes de ciertas propiedades de caja que no encuadren correctamente*/
+}
+/*-----------------------------------Faqs.html-------------------------------*/
+.faqs_title{
+  text-align: center;
+  padding-top: 40px;
+}
+.faqs .row{
+
+  margin: 47px 0px;
+}
+/*---------------------------------terminos.html-----------------------------*/
+.credits a{
+  color: black;
+  text-decoration: none;
+}

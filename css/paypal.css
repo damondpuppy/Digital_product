@@ -1,0 +1,17 @@
+body{
+  background: var(--blue-color);
+  text-align: center;
+  color: white;
+}
+.content_paypal{
+
+  height: 100vh;/* "vh" significa tamaño de la pantalla*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content_paypal a{
+
+  color: var(--orange-color);
+}

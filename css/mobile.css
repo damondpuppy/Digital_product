@@ -1,0 +1,30 @@
+@media (max-width:900px) {/*A partir de que ancho empezará a actuar las nuevas propiedades*/
+
+  .products{
+    display: inherit;
+    height: auto;
+  }
+  .product{
+    margin-top: auto;
+  }
+  .main_section{
+    padding: 4%;
+  }
+
+  .benefits, .mentions{
+    display: inline;
+  }
+
+
+
+}
+@media (min-width:1500px) {
+
+  .products{
+    padding: 10%;
+    padding-bottom: 5%;
+  }
+  .main_section{
+    padding: 10%;
+  }
+}

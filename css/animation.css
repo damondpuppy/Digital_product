@@ -1,0 +1,51 @@
+/*--------------Animacion Opacidad-----------------*/
+.fadeIn{
+  animation-duration: 4s;/*Duración de la animación*/
+  animation-fill-mode: both;/*Se va a cumplir la regla en la ida y en el regreso*/
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+/*------------------------Arriba hacia abajo----------------*/
+.fadeInDown{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+
+  from{
+    opacity: 0;
+    transform: translate3d(0,-100%,0);/*Le da posicion a la animacion y el 100% es de arriba hacia abajo*/
+  }to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+
+}
+/*------------------------Abajo hacia arriba----------------*/
+
+.fadeInUp{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+
+  from{
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+  }to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+
+}
